@@ -6,9 +6,12 @@
 }
 
 body {
-    background-color: #F8F5EB;
-    color: #2E2E2E;
-    padding: 20px;
+  background-image: url('background.ico'); 
+  background-size: 700px;     
+  background-repeat: repeat;  
+  background-position: center;   
+  background-attachment: fixed;  
+  background-color: #f8f5eb;     
 }
 
 header {
@@ -16,6 +19,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 40px;
+    background-color: rgba(255, 255, 255, 0.94);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .container {
@@ -54,27 +60,28 @@ h2 {
 
 .info {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-    gap: 50px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 60px;
     padding: 0 40px;
 }
 
 .info-text {
-    max-width: 500px;
+    max-width: 700px;
+    background-color: rgba(255, 255, 255, 0.94);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .info-text h3 {
     font-size: 35px;
     font-weight: 700;
-    color: #2E2E2E;
     margin-bottom: 20px;
 }
 
 .info-text p {
     font-size: 20px;
-    color: #2E2E2E;
     margin-bottom: 30px;
 }
 
@@ -87,17 +94,21 @@ h2 {
     color: #2E2E2E;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-bottom: 25px;
 }
 
 .info-text button:hover {
-    background-color: #BFE8D0;
+    background-color: #A7DAC0;
 }
 
-.info-dog img {
-    width: 450px;
-    height: auto;
-    border-radius: 300px;
-    background-color: #F8F5EB;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.goals {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 18px;
+    color: #333;
 }
+
+.goals li {
+    margin-bottom: 12px;
+}
+

@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-image: url('background.ico'); 
+  background-size: 700px;     
+  background-repeat: repeat;  
+  background-position: center;   
+  background-attachment: fixed;  
+  background-color: #f8f5eb;     
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: rgba(255, 255, 255, 0.94);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 50px;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+.buttons {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.buttons li a {
+    text-decoration: none;
+    color: #2E2E2E;
+    font-weight: 750;
+    padding: 8px 12px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buttons li a:hover {
+    background-color: #C7EBDD;
+    color: #134E42;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 60px;
+    padding: 0 40px;
+}
+
+.info-text {
+    max-width: 700px;
+    background-color: rgba(255, 255, 255, 0.94);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.info-text h3 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.info-text p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.info-text button {
+    background-color: #BFE8D0;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #2E2E2E;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 25px;
+}
+
+.info-text button:hover {
+    background-color: #A7DAC0;
+}
+
+.phones {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.phones li {
+    margin-bottom: 12px;
+}
+
+.names {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.names li {
+    margin-bottom: 12px;
+}
+
+.adress {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.adress li {
+    margin-bottom: 12px;
+}
