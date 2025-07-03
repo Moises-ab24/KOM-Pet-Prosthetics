@@ -2,18 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
 }
 
+/* Estilo base del cuerpo */
 body {
-  background-image: url('background.ico'); 
-  background-size: 700px;     
-  background-repeat: repeat;  
-  background-position: center;   
-  background-attachment: fixed;  
-  background-color: #f8f5eb;     
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #222;
 }
 
+/*Encabezado*/
 header {
     display: flex;
     justify-content: space-between;
@@ -58,57 +56,163 @@ h2 {
     color: #134E42;
 }
 
-.info {
+/* SECCIÓN PRINCIPAL DE LA FRASE */
+.frase-principal {
+    background-color: #c6f5d8;
+    /* Fondo verde claro */
+    padding: 110px 20px;
+    /* Espacio interno alrededor */
+}
+
+/* CONTENEDOR FLEXIBLE DE DOS COLUMNAS */
+.contenido {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 60px;
-    padding: 0 40px;
+    flex-wrap: wrap;
+    /* Para que en pantallas pequeñas se acomode en columna */
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.info-text {
-    max-width: 700px;
-    background-color: rgba(255, 255, 255, 0.94);
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+/* COLUMNA DE TEXTO */
+.texto {
+    flex: 1 1 50%;
+    /* Ocupa la mitad */
+    padding: 20px;
 }
 
-.info-text h3 {
-    font-size: 35px;
-    font-weight: 700;
+.texto h1 {
+    font-size: 65px;
+    /* Tamaño grande para la frase */
+    color: #1a1a1a;
     margin-bottom: 20px;
 }
 
-.info-text p {
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-.info-text button {
-    background-color: #BFE8D0;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 20px;
-    font-weight: 600;
-    color: #2E2E2E;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-bottom: 25px;
-}
-
-.info-text button:hover {
-    background-color: #A7DAC0;
-}
-
-.goals {
-    list-style-type: disc;
-    padding-left: 20px;
-    font-size: 18px;
+.texto p {
+    font-size: 27px;
     color: #333;
 }
 
-.goals li {
-    margin-bottom: 12px;
+/* COLUMNA DE IMAGEN */
+.imagen {
+    flex: 1 1 40%;
+    /* Un poco menos para la imagen */
+    text-align: center;
 }
 
+.imagen img {
+    width: 600px;
+    height: auto;
+}
+
+/* Sección principal (hero) */
+.hero {
+    background-image: url("background.ico");
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.71), rgba(255, 255, 255, 0.71)),
+        url('background.ico');
+    background-size: 700px;
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #f8f5eb;
+    /* Fondo decorativo de patitas y mascotas */
+    background-size: cover;
+    background-repeat: repeat;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Texto de características */
+.caracteristicas {
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+/* Botón de más información */
+.boton-info {
+    text-align: center;
+    margin: 50px;
+}
+
+.boton-info a {
+    text-decoration: none;
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/* Galería de imágenes */
+.galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 10px;
+}
+
+.galeria img {
+    width: 220px;
+    margin: 20px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+/* Pie de página (footer) */
+footer {
+    background-color: #bcead5;
+    padding: 20px 25px;
+}
+
+.info-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.info-footer div {
+    flex: 1;
+    min-width: 200px;
+}
+
+footer h3,
+footer h4 {
+    margin-top: 0;
+    font-size: 25px;
+}
+
+footer p,
+ul {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+/* PIE DE PÁGINA */
+.derechos {
+    background-color: #2c2c2c;
+    /* Gris muy oscuro */
+    color: white;
+    /* Texto blanco */
+    text-align: center;
+    /* Centra texto */
+    padding: 20px 0;
+    /* Espacio arriba y abajo */
+    font-size: 17px;
+    /* Tamaño pequeño */
+    margin-top: 0;
+    /* Separación del contenido previo */
+}

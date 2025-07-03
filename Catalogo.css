@@ -7,6 +7,9 @@
 
 body {
   background-image: url('background.ico'); 
+  background: 
+    linear-gradient(rgba(109, 109, 109, 0.2), rgba(109, 109, 109, 0.2)),  /* Menos opacidad (más transparente) */
+    url('background.ico');
   background-size: 700px;     
   background-repeat: repeat;  
   background-position: center;   
