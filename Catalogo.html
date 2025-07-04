@@ -10,10 +10,11 @@
 </head>
 
 <body>
+    <!-- ENCABEZADO -->
     <header>
         <div class="container">
             <img src="KOM.ico" alt="logo" class="logo">
-            <h2>KOM Pet Prosthetics</h2>
+            <h1>KOM Pet Prosthetics</h1>
         </div>
         <nav>
             <ul class="buttons">
@@ -24,63 +25,109 @@
         </nav>
     </header>
 
-    <main>
-        <section class="productos">
-            <div class="titulo">
-                <h1 class="titulo-productos">Productos</h1>
-            </div>
-            <div class="lista-productos">
-                <div class="producto">
-                    <img src="dog.ico" alt="Producto 1">
-                    <h3>Prótesis para perro mediano</h3>
-                    <h3>₡149,990</h3>
-                </div>
-                <div class="producto">
-                    <img src="rodillaDog.ico" alt="Producto 2">
-                    <h3>Prótesis de rodilla para gato</h3>
-                    <h3>₡109,990</h3>
-                </div>
-                <div class="producto">
-                    <img src="paloma.ico" alt="Producto 3">
-                    <h3>Soporte ortopédico articulado para ave</h3>
-                    <h3>₡59,990</h3>
-                </div>
-                <div class="producto">
-                    <img src="tarsoCat.ico" alt="Producto 4">
-                    <h3>Soporte tipo tarso para gato</h3>
-                    <h3>₡79,990</h3>
-                </div>
-                <div class="producto">
-                    <img src="duck.ico" alt="Producto 5">
-                    <h3>Soporte ortopédico articulado para pato</h3>
-                    <h3>₡49,990</h3>
-                </div>
-                <div class="producto">
-                    <img src="collar.ico" alt="Producto 6">
-                    <h3>Collares inteligentes decorados</h3>
-                    <h3>₡19,990</h3>
-                </div>
-                <div class="producto">
-                    <img src="cat1.ico" alt="Producto 7">
-                    <h3>Soporte ortopédico articulado para gato</h3>
-                    <h3>₡99,990</h3>
-                </div>
-                <div class="producto">
-                    <img src="sensor.ico" alt="Producto 8">
-                    <h3>Sensor ESP32 para prótesis</h3>
-                    <h3>₡7,990</h3>
-                </div>
-            </div>
-            <div class="texto-inferior">
-                <p>
-                    Si desea realizar un pedido o solicitar más información sobre nuestros productos, no dude en ponerse
+    <!-- SECCIÓN PRINCIPAL CON FRASE E IMAGEN -->
+    <section class="frase-principal">
+        <div class="contenido">
+
+            <!-- COLUMNA DE TEXTO -->
+            <div class="texto">
+                <h1>Productos</h1>
+                <p>Si desea realizar un pedido o solicitar más información sobre nuestros productos, no dude en ponerse
                     en contacto con nosotros. Estaremos encantados de atenderle y brindarle la asesoría que necesite
-                    para encontrar la solución más adecuada para su mascota.
-                </p>
-                <button onclick="location.href='nosotros.html'">CONTÁCTENOS</button>
+                    para encontrar la solución más adecuada para su mascota.</p>
             </div>
-        </section>
-    </main>
+
+            <!-- COLUMNA DE IMAGEN DE MASCOTAS -->
+            <div class="imagen">
+                <img src="pets2.ico" alt="Perro y gato juntos" />
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION DE PRODUCTOS -->
+    <section class="productos">
+        <div class="lista-productos">
+            <div class="producto">
+                <img src="dog.ico" alt="Producto 1">
+                <h3>Prótesis para perro mediano</h3>
+                <h3>₡149,990</h3>
+            </div>
+            <div class="producto">
+                <img src="rodillaDog.ico" alt="Producto 2">
+                <h3>Prótesis de rodilla para gato</h3>
+                <h3>₡109,990</h3>
+            </div>
+            <div class="producto">
+                <img src="paloma.ico" alt="Producto 3">
+                <h3>Soporte ortopédico articulado para ave</h3>
+                <h3>₡59,990</h3>
+            </div>
+            <div class="producto">
+                <img src="tarsoCat.ico" alt="Producto 4">
+                <h3>Soporte tipo tarso para gato</h3>
+                <h3>₡79,990</h3>
+            </div>
+            <div class="producto">
+                <img src="duck.ico" alt="Producto 5">
+                <h3>Soporte ortopédico articulado para pato</h3>
+                <h3>₡49,990</h3>
+            </div>
+            <div class="producto">
+                <img src="collar.ico" alt="Producto 6">
+                <h3>Collares inteligentes decorados</h3>
+                <h3>₡19,990</h3>
+            </div>
+            <div class="producto">
+                <img src="cat1.ico" alt="Producto 7">
+                <h3>Soporte ortopédico articulado para gato</h3>
+                <h3>₡99,990</h3>
+            </div>
+            <div class="producto">
+                <img src="sensor.ico" alt="Producto 8">
+                <h3>Sensor ESP32 para prótesis</h3>
+                <h3>₡7,990</h3>
+            </div>
+        </div>
+        <div class="boton-inferior">
+            <a href="nosotros.html">Contáctenos</a>
+        </div>
+    </section>
+
+    <!-- Pie de página con información de contacto y dirección -->
+    <footer>
+        <div class="info-footer">
+            <div>
+                <h3>KOM Pet<br>Prosthetics</h3>
+            </div>
+            <div>
+                <h4>Dirección</h4>
+                <p>Parque Empresarial del Valle, Edificio C, Oficina 305<br>San Rafael de Alajuela,<br>Alajuela, Costa
+                    Rica</p>
+            </div>
+            <div>
+                <h4>Contactos</h4>
+                <ul>
+                    <li>(506) 2205-7841</li>
+                    <li>(506) 8912-3345</li>
+                    <li>(506) 7011-8899</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Integrantes</h4>
+                <ul>
+                    <li>Moisés Antonio Abarca Alvarado</li>
+                    <li>Kenneth Alejandro Araya Quesada</li>
+                    <li>Oscar Alonso Víquez</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PIE DE PÁGINA -->
+    <section class="derechos">
+        <p>&copy; 2025 KOM Pet Prosthetics. Todos los derechos reservados.</p> <!-- Texto legal -->
+    </section>
+
 </body>
 
 </html>
